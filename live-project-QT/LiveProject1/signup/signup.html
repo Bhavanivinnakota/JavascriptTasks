@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="style.css"/>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+   <section id="sectioncontent">
+   <header id="homeHeader">
+     <section id="brand" class="myflex">
+        <h1>My-Ecomm</h1>
+     </section>
+     <section id="links" class="myflex">
+        <a href="../home/home.html" target="new"><b>Home</b></a>
+        <a href="../products/products.html" target="new"><b>Products</b></a>
+        <a href="../profile/profile.html" target="new"><b>Profile</b></a>
+        <a href="../contactus/contactus.html" target="new"><b>ContactUs</b></a>
+     </section>
+     <section id="logos" class="myflex">
+      <a href="../cart/cart.html" target="new"><i class="bi bi-bag-check-fill"></i></a>
+      <a href="../wishList/wishlist.html" target="new"><i class="bi bi-heart-fill"></i></a>
+       <a href="../login/login.html" target="new">  <button>Login</button> </a>
+     </section>
+</header>
+
+<main>
+   <h1 style="margin-top:10px; text-align: center; font-family: Arial, sans-serif; color: #444; color:blue">Registration Form</h1>
+   <section class="login">
+       <center>
+          <i class="bi bi-box-arrow-in-right  style="font-size: 3rem; color: #6a1b9a; margin-top: 20px;></i>
+       </center>
+       <form>
+        <table>
+            <tr>
+           <td> <label for="firstname">FirstName</label></td>
+            <td><input type="text" id="firstname" placeholder="Enter first name" /></td>
+            </tr>
+            <tr>
+             <td><label for="lastname">LastName</label></td>
+           <td> <input type="text" placeholder="Enter Your LastName" id="lastname"/></td>
+            </tr>
+            <tr>
+               <td><label for="email">Email</label></td>
+               <td><input type="email" id="email" placeholder="Enter Your email" /></td>
+            </tr>
+            <tr>
+               <td><label for="number">MobileNumber</label></td>
+               <td><input type="text" id="number" placeholder="Enter Your MobileNumber" /></td>
+            </tr>
+            <tr>
+            
+               <td><label for="gender">Gender</td>
+              <td> <input type="radio" name="gen" />
+               <label >Female</label></td>
+               <td><input type="radio" name="gen" id="gender">
+               <label>Male</label></td>
+            </tr>
+            <tr>
+               <td colspan="3" style="text-align: center;">
+                 <button type="submit">Register</button>
+               </td>
+             </tr>
+            
+           </table>
+       </form>
+       </section>
+       </main>
+    </body>
+    </html>

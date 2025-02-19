@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT PAGE</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="product.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body  onload="getallProducts()">
+   <section id="sectioncontent">
+   <header id="homeHeader">
+     <section id="brand" class="myflex">
+        <h1>My-Ecomm</h1>
+     </section>
+     <section id="links" class="myflex">
+        <a href="../home/home.html" target="new"><b>Home</b></a>
+        <a href="../products/products.html" target="new"><b>Products</b></a>
+        <a href="../profile/profile.html" target="new"><b>Profile</b></a>
+        <a href="../contactus/contactus.html" target="new"><b>ContactUs</b></a>
+     </section>
+     <section id="logos" class="myflex">
+      <a href="../cart/cart.html" target="new"><i class="bi bi-bag-check-fill"></i></a>
+      <a href="../wishList/wishlist.html" target="new"><i class="bi bi-heart-fill"></i></a>
+      <a href="../login/login.html" target="new">  <button>LogIn</button></a>
+     </section>
+   </header>
+   <hr>
+   <main>
+    <section id="productimage">
+        <div style=" width:100% ;height: 100% ;background : rgba(0,0,0,0.7)" id="contentdiv">
+            <h1>Welcome to Ecommerce website with great offers </h1>
+              <p> E-commerce websites are incredibly useful today as they offer unmatched convenience by allowing customers to shop 24/7 from anywhere. They save time, provide access to a wide range of products globally, and often feature competitive pricing with deals and discounts. With secure payment options, personalized recommendations, and customer reviews, they ensure a seamless and informed shopping experience. Additionally, features like easy returns and eco-friendly benefits, such as reduced travel and consolidated deliveries, make them an integral part of modern, fast-paced lifestyles. These platforms simplify and enhance the shopping experience, catering to the evolving needs of consumers.</p>
+        </div>
+    </section>
+    <section id="productradio">
+        <div>
+        <input type="radio" checked name="product">
+        <label>All</label>
+        </div>
+        <div>
+        <input type="radio" name="product">
+        <label>Electronics</label>
+        </div>
+        <div>
+            <input type="radio" name="product">
+            <label>Jewellery</label>
+        </div>
+        <div>
+        <input type="radio" name="product">
+        <label>Men's Wear</label>
+        </div>
+        <div>
+        <input type="radio" name="product" >
+        <label>Women's Wear</label>
+        </div>
+    </section>
+       <section class="container" id="container">
+        <!-- <div class="cards">
+            <img src="mb1.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="opo.jpg" alt="mobile image" width="300px" height="300px"/>
+           <div id="like">
+            <h1>Vivo</h1>
+            <i  style="size:32px" class="bi bi-suit-heart"></i>
+            </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="iqoo.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="ap1.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="ap11.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="ap12.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like" >
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart" id="love"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="s11.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="ap14.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="opo.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="one15.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Vivo</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Snapdragon 8 Elite Mobile Platform.<br>
+                2K 144Hz Ultra EyeCare</p><br>
+            <h4>Price : $500  &#40 10%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j1.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j2.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j3.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j4.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j5.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j6.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j7.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j8.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j9.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="j10.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Jewellery</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Fancy jewellery<br>
+                that brightens you look with our items</p><br>
+            <h4>Price : $3000  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m1.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m2.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m3.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m4.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m5.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m6.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m7.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m8.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m9.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="m10.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Men'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $950  &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w1.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w2.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w3.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w4.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w5.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w6.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w7.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w8.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w9.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div>
+        <div class="cards">
+            <img src="w10.jpg" alt="mobile image" width="300px" height="300px"/>
+            <div id="like">
+                <h1>Women'sWear</h1>
+                <i  style="size:32px" class="bi bi-suit-heart"></i>
+                </div>
+            <p>Latest Stylish Dresses and items<br>
+                that styles you look with our items</p><br>
+            <h4>Price : $700 &#40 5%off &#41 </h4><br>
+           <button>AboutProduct</button>
+           <button>BuyNow</button>
+        </div> -->
+       </section>
+   
+   </main>
+   <footer></footer>
+ 
+   </body>
+   </html>
