@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("https://api.npoint.io/bc6397dc772b698de96f").then((res)=> { return res.json()}).then(data => { console.log(data[1].name)});
+    </script>
+</body>
+</html>
