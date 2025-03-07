@@ -1,0 +1,30 @@
+div #one{
+    color:white;
+    background-color: green;
+    border:3px solid green;
+    padding:7px 30px;
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace;
+    margin-right:20px;
+}
+div #two{
+    color:white;
+    background-color: blue;
+    border:3px solid blue;
+    padding:7px 30px;
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace;
+}
+div{
+   text-align:center;
+    width:500px;
+    margin:100px auto;
+}
+h2{
+    text-align:center;
+    margin-top:30px;
+    color:blueviolet;
+}
+*{
+    background:linear-gradient(to right,pink,rgb(89, 137, 89),lightblue)
+}
